@@ -34,10 +34,46 @@
 // 4. Присвоить переменной а значение в промежутке [0..15]. С помощью оператора switch организовать вывод чисел от a до 15.
 //   Дополнительно, по желанию - сделать данный пример через рекурсию
 
-// const MIN = 0;
-// const MAX = 15;
-// let a = Math.ceil(Math.random() * (MAX - MIN) - MIN)
-// console.log(a)
+const MIN = 0;
+const MAX = 15;
+let a = Math.ceil(Math.random() * (MAX - MIN) - MIN)
+console.log('число ', a)
+console.log('прогон до 15')
+
+switch (a) {
+  case 0 :
+    console.log(0);
+  case 1 :
+    console.log(1)
+  case 2 :
+    console.log(2);
+  case 3 :
+    console.log(3)
+  case 4 :
+    console.log(4);
+  case 5 :
+    console.log(5)
+  case 6 :
+    console.log(6);
+  case 7 :
+    console.log(7)
+  case 8 :
+    console.log(8);
+  case 9 :
+    console.log(9)
+  case 10 :
+    console.log(10);
+  case 11 :
+    console.log(11)
+  case 12 :
+    console.log(12);
+  case 13 :
+    console.log(13)
+  case 14 :
+    console.log(14);
+  case 15 :
+    console.log(15)
+}
 
 
 // 5. Реализовать основные 4 арифметические операции в виде функций с двумя параметрами. Обязательно использовать оператор return.
@@ -58,13 +94,13 @@ function mathOperation(arg1, arg2, operation){
       console.log(sum(arg1, arg2))
       break
     case 'вычитание':
-      minus(arg1, arg2)
+      console.log(minus(arg1, arg2))
       break
     case 'умножение':
-      multi(arg1, arg2)
+      console.log(multi(arg1, arg2))
       break
     case 'деление':
-      divis(arg1, arg2)
+      console.log(divis(arg1, arg2))
       break
     default:
       alert('Вы ввели не так. Вот пример: 2,3,сложение')
